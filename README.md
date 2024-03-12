@@ -2,34 +2,34 @@
 
 > [!Note]
 > AI Builder AI プロンプトとして、[GPT の機能が日本でも利用できるようになりました](https://learn.microsoft.com/ja-jp/ai-builder/availability-region)。
+> 
 > 日本でのAI プロンプトの利用は[地域間のデータ移動を有効化する](https://learn.microsoft.com/ja-jp/power-platform/admin/geographical-availability-copilot#enable-data-movement-across-regions)必要があります。
+> 
 > また、動いたよ、できたよという結果は是非、 [ギークフジワラのXアカウント](https://x.com/Geekfujiwara) までメンションしてご報告ください！！
 
 Bing Search API でWebの検索結果を生成AI により要約して回答し、Dataverse に保存ができるPower Apps のアプリケーションです。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/52b655d7-13c1-4e14-b6e3-f94744f1e824)
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/2d3ffeca-578b-4f41-87f5-8b88cf195114)
+
+> [!ポイント]
+> 広く一般の公開情報に対して情報収集して要約することが可能なため、様々な分野で利用することが出来ます。
 
 レスポンシブデザインに対応しており、スマホ縦レイアウトでは最低限の情報だけ表示されるようになります。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/023a45f4-07c6-4c1f-a1b6-97456c3e6010)
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/9c0c2588-b6fd-43e8-970c-1dbd91a88cb0)
 
 過去に登録されたナレッジも見たい場合は横向きのレイアウトにすると見えるようになっています。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/c8e1eb2d-c3bc-453a-a49a-e88ef179c844)
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/14069a28-7b6e-400c-82ff-80ae6b892801)
 
-広く一般の公開情報に対して情報収集して要約することが可能なため、様々な分野で利用することが出来ます。
-
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/d6f9457c-325b-4267-a4ae-91bf3685dbf1)
 
 生成AI は間違いを起こすことがあるため、実際の検索結果を確認することが出来るようになっています。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/8d430af6-96a4-4727-becb-00bcb62afa81)
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/f4317e3c-e170-4b04-9e21-4a57959942fa)
 
 作成した回答はナレッジとして保存することが出来ます。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/887dcee3-237b-4955-b566-09e385c95213)
-
-
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/b446bd1d-06f6-49a8-8bf6-08be233fa41a)
 
 
 # 事前準備
@@ -62,47 +62,51 @@ Bing Search API でWebの検索結果を生成AI により要約して回答し�
 
 Bing search リソースを検索して新規作成します。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/19729265-7600-46b9-8db3-66e24dab4994)
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/2fe058a6-60b4-4d15-9ff2-cc5bee151765)
+
+リソースは以下のように作成します。リソースグループ、名前は自由です。
+
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/b3daa804-c306-41e7-ac42-df1bb9f74cfa)
 
 作成できましたらキーを入手します。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/bae89571-a1ec-4178-875a-01f9967ceec6)
-
-キーはこちらから入手できます。
-
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/907595bb-4124-42fa-8bf8-5103173f0918)
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/38d6c0e8-03e2-401c-b73d-458d8cc2ad1e)
 
 ## Power Apps ソリューション
 
 Power Apps のソリューションは[リリース](https://github.com/geekfujiwara/WEB2GPT/releases/tag/1.0.0.0)から入手できます。
 
 ソリューションのインポートを行います。
-
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/490bf108-f23b-4d56-a5d1-0e75e71dfd39)
-
 リリースから入手したソリューションファイルをアップロードします。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/49a5b94c-6a57-4398-a3af-03475223a35e)
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/a9234955-452d-417e-89a7-39bd87de7dd5)
 
-次へに進みます。
-
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/dc1bd06c-ee63-40ba-b364-5d5589ea3856)
+次へ進みます。
 
 インポート時にBing Search API のKeyを問われますので入力します。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/159ce233-c225-42ed-9d62-4ad1cecaf7b3)
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/6c55326b-73cd-44da-a9f6-98e7c6d6c203)
 
 > {!Note}
 > インポート後に言語のラベルが不足している旨の警告が出ても問題ありません。
 > ![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/35b1c7c8-a882-48bb-8c3c-6541ff1a0353)
 
-マネージドソリューションをインポートした場合、マネージドソリューションのタブにソリューションが存在しています。
+マネージドソリューションをインポートした場合、マネージドソリューションのタブにソリューションが存在しています。すべてとすれば種別関係なく表示されます。
 
-![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/8131df77-c449-4464-bc64-7265a332ad94)
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/ab0812ec-a7d7-40b5-b12b-70ff30c245b1)
+
+WEB2GPTのSolutionに移ります。
+
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/da51b867-5c1a-4cae-8648-5072a36ed52f)
 
 インポート後、すべてのカスタマイズを公開してください。
 
 ![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/c91be7b8-95f6-4981-996b-c22d4af0b34d)
+
+クラウドフローを有効にします。
+
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/701ceb18-c803-43f7-b375-959c9a8b0e6d)
+
 
 # アプリの利用方法
 
@@ -113,33 +117,34 @@ Power Apps のソリューションは[リリース](https://github.com/geekfuji
 
 サンプルの質問として以下を入力してみます。
 
+`Microsoft Storeの学生割引は親でも使えますか？`
+
 > [!Note]
 > 自由に質問を入力してみてください。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/16e16642-6b5c-44c2-bc00-3f4a9254bd89)
-
-
 入力後、回答案の生成をさせてみます。
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/91e07730-82a2-4d18-843e-973f59e44cf2)
+
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/2454dcc2-2ce4-4cbc-ab43-22403ccefa6a)
+
 
 検索と生成に少々時間を要します。作成中はアプリの操作ができないように読み込み画面に切り替わります。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/625c3014-2720-4133-890f-714bff3ac056)
-
 生成AIにより回答が生成されました。参考にしたリンクも同時に返してくれています。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/75b1ee6f-d977-4860-b592-8ea1c07fa3a2)
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/9b8b733b-658a-4eaa-ac9a-6f95f9594eda)
 
 保存に成功すると左側のメニューに表示されます。
+
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/5f714ec8-5109-404d-9b7f-305d5b98f06b)
+
 
 > [!Note]
 > 実際にはDataverseに保管されています。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/247d5875-29f2-4b01-a511-c6abe841a52d)
+生成AI は間違いを起こすことがあるため、実際の検索結果を確認することが出来るようになっています。
 
-検索結果も確認することが出来ます。
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/f4317e3c-e170-4b04-9e21-4a57959942fa)
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/8cd66a16-6632-4f16-8d6a-c18baa1ffa07)
 
 # 仕様説明
 
@@ -147,7 +152,7 @@ Power Apps のソリューションは[リリース](https://github.com/geekfuji
 
 AI Builder では以下のようなAI プロンプトを作成しています。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/33e74dfc-3e44-409f-98e2-8212854bb711)
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/c1bbd7e3-820d-46f4-a292-9cac89e58fe7)
 
 
 ## Power Automate でのBing Search
@@ -156,7 +161,7 @@ Power Automate で検索処理を設定しています。
 
 HTTPリクエストの部分がBing Search API の部分です。
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/392878fc-3e8b-489f-b3aa-f885b2fb35d5)
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/e05be8ed-2ef7-4de7-a325-bd2b51d9829a)
 
 
 
