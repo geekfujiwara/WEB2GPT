@@ -74,7 +74,7 @@ Bing search リソースを検索して新規作成します。
 
 ## Power Apps ソリューション
 
-Power Apps のソリューションはリリースから入手できます。
+Power Apps のソリューションは[リリース](https://github.com/geekfujiwara/WEB2GPT/releases/tag/1.0.0.0)から入手できます。
 
 ソリューションのインポートを行います。
 
@@ -84,18 +84,31 @@ Power Apps のソリューションはリリースから入手できます。
 
 ![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/49a5b94c-6a57-4398-a3af-03475223a35e)
 
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/dc1bd06c-ee63-40ba-b364-5d5589ea3856)
+次へに進みます。
 
+![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/dc1bd06c-ee63-40ba-b364-5d5589ea3856)
 
 インポート時にBing Search API のKeyを問われますので入力します。
 
 ![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/159ce233-c225-42ed-9d62-4ad1cecaf7b3)
 
+> {!Note}
+> インポート後に言語のラベルが不足している旨の警告が出ても問題ありません。
+> ![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/35b1c7c8-a882-48bb-8c3c-6541ff1a0353)
+
+マネージドソリューションをインポートした場合、マネージドソリューションのタブにソリューションが存在しています。
+
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/8131df77-c449-4464-bc64-7265a332ad94)
 
 インポート後、すべてのカスタマイズを公開してください。
 
-まずは新規作成ボタンをクリックします。
-![image](https://github.com/geekfujiwara/GenerativeAI-WebSearchAnswer/assets/96101315/bc963f79-1067-45da-b4eb-061a9ae25b78)
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/c91be7b8-95f6-4981-996b-c22d4af0b34d)
+
+# アプリの利用方法
+
+アプリを起動します。
+
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/1d948b27-25a8-4c48-b5c8-34dfb8a429e0)
 
 
 サンプルの質問として以下を入力してみます。
