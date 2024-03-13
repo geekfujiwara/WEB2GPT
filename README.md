@@ -152,7 +152,7 @@ WEB2GPTのSolutionに移ります。
 
 AI Builder では以下のようなAI プロンプトを作成しています。
 
-![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/c1bbd7e3-820d-46f4-a292-9cac89e58fe7)
+![image](https://github.com/geekfujiwara/WEB2GPT/assets/96101315/c8da8508-1d29-43a1-9c7b-91290eb02a7e)
 
 
 ## Power Automate でのBing Search
